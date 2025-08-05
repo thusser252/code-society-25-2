@@ -31,5 +31,5 @@ This upcoming year my goal is to expand my tech portfolio.
 
 
 
-<img src="images/1000009844.png" height=400 /></a>
-><img src="images/1000009846.png" height=400 /></a>
+<img src="images/1000009844.jpg" height=400 />
+><img src="images/1000009846.jpg" height=400 />
