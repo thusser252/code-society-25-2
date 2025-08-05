@@ -31,5 +31,5 @@ This upcoming year my goal is to expand my tech portfolio.
 
 
 
-<a href="https://twitter.com/anthonydmays/status/1665044329528975363"><img src="images/1000009844.png" height=400 /></a>
-<a href="https://www.linkedin.com/posts/anthonydmays_practicelikeachampion-techinterview-straightouttacompton-activity-6922630732154642432-Yrwr?utm_source=share&utm_medium=member_desktop"><img src="images/1000009846.png" height=400 /></a>
+<img src="images/1000009844.png" height=400 /></a>
+><img src="images/1000009846.png" height=400 /></a>
