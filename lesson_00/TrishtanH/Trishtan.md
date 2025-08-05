@@ -31,5 +31,5 @@ This upcoming year my goal is to expand my tech portfolio.
 
 
 
-<img src="image/pic-ted-talk.png" height=200 /></a>
-<img src="image/pic-with-daughter.png" height=200 /></a>
+<img src="image/pic-ted-talk.png" height=200 width=100 /></a>
+<img src="image/pic-with-daughter.png" height=200 width=100 /></a>
