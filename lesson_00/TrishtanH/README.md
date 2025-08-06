@@ -34,5 +34,5 @@ One of my main goals this year is to expand my tech portfolio. I want to take on
 
 
 
-<img src="image/1000009844.png" height=200 width=100 /></a>
-<img src="image/1000009846.png" height=200 width=100 /></a>
+<img src="Image/1000009844.png" height=200 width=100 /></a>
+<img src="Image/1000009846.png" height=200 width=100 /></a>
