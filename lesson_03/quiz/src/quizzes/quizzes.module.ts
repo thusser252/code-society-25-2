@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { DanielsonAdjocyQuiz } from './danielson_adjocys_quiz.js';
 import { AnotherQuiz } from './another_quiz.js';
 import { AnthonyMaysQuiz } from './anthony_mays_quiz.js';
+import { DanielBoyceQuiz } from './daniel_boyce_quiz.js';
 import { NicoleJacksonQuiz } from './nicole_jackson_quiz.js';
 import { MattieWeathersbyQuiz } from './mweathersby_quiz.js';
 import { KerryFergusonQuiz } from './kerry_ferguson_quiz.js';
@@ -27,6 +28,7 @@ const QUIZ_PROVIDERS = [
   MattieWeathersbyQuiz,
   BenjaminScottQuiz,
   DanielsonAdjocyQuiz,
+  DanielBoyceQuiz,
   LindaQuinoaQuiz,
   TaliaCrockettQuiz,
   DeanWalstonQuiz,
