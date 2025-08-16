@@ -9,6 +9,7 @@ import { BrooklynHardenQuiz } from './brooklyn_harden_quiz.js';
 import { TaliaCrockettQuiz } from './talia_crockett_quiz.js';
 import { TrinitieJacksonQuiz } from './trinitie_jackson_quiz.js';
 import { TyranRicesQuiz } from './tyran_rices_quiz.js';
+import { LindaQuinoaQuiz } from './linda_quinoa_quiz.js';
 import { DeanWalstonQuiz } from './dean_walston_quiz.js';
 
 export const Quizzes = Symbol.for('Quizzes');
@@ -23,6 +24,7 @@ const QUIZ_PROVIDERS = [
   MattieWeathersbyQuiz,
   BenjaminScottQuiz,
   DanielsonAdjocyQuiz,
+  LindaQuinoaQuiz,
   TaliaCrockettQuiz,
   DeanWalstonQuiz,
   KerryFergusonQuiz,
