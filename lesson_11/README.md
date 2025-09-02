@@ -53,6 +53,7 @@ Before submitting your work, make sure all tests pass and your code follows the 
 ```bash
 # For Java
 ./gradlew check
+./gradlew spotlessApply
 
 # For TypeScript
 npm run check

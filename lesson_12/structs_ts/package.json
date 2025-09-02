@@ -1,11 +1,11 @@
 {
-  "name": "lesson_11",
+  "name": "lesson_12",
   "version": "1.0.0",
-  "main": "./build/lesson11.js",
+  "main": "./build/lesson12.js",
   "type": "module",
   "scripts": {
-    "start": "node build/lesson11.js",
-    "dev": "tsc-watch --noClear -p ./tsconfig.build.json --onSuccess \"node ./build/lesson11.js\"",
+    "start": "node build/lesson12.js",
+    "dev": "tsc-watch --noClear -p ./tsconfig.build.json --onSuccess \"node ./build/lesson12.js\"",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "compile": "tsc -p tsconfig.build.json",
     "prepare": "npm run compile",

@@ -70,9 +70,9 @@ class Lesson11Test {
     assertEquals(expected3, result3);
 
     // Test case 4
-    char ch4 = 'x';
-    String[] words4 = {};
-    List<Integer> expected4 = Arrays.asList();
+    char ch4 = 'a';
+    String[] words4 = {"", " ", "banana"};
+    List<Integer> expected4 = Arrays.asList(2);
     List<Integer> result4 = solution.findWordsContaining(words4, ch4);
     assertEquals(expected4, result4);
   }
