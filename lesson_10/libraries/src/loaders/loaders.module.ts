@@ -5,7 +5,11 @@ import { TrishtanhusserLoader } from './trishtanhusser_loader.js';
 
 export const Loaders = Symbol.for('Loaders');
 
-const LOADER_PROVIDERS = [AnthonyMaysLoader, BenjaminScottLoader, TrishtanhusserLoader];
+const LOADER_PROVIDERS = [
+  AnthonyMaysLoader,
+  BenjaminScottLoader,
+  TrishtanhusserLoader,
+];
 
 @Module({
   providers: [
