@@ -1,0 +1,6 @@
+gradle.properties.template
+gradlew
+gradlew.bat
+gradle/
+.gradle/
+build/
