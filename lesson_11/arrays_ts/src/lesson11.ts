@@ -3,9 +3,16 @@
  * https://leetcode.com/problems/concatenation-of-array
  */
 export function getConcatenation(nums: number[]): number[] {
-  // TODO: Implement concatenation logic
-  console.log('Input length:', nums.length);
-  return [];
+  // Create a new array with double the length
+  const result: number[] = new Array(nums.length * 2);
+  
+  // Copy the original array twice
+  for (let i = 0; i < nums.length; i++) {
+    result[i] = nums[i]; // First copy
+    result[i + nums.length] = nums[i]; // Second copy
+  }
+  
+  return result;
 }
 
 /**
@@ -13,7 +20,14 @@ export function getConcatenation(nums: number[]): number[] {
  * https://leetcode.com/problems/find-words-containing-character/
  */
 export function findWordsContaining(words: string[], x: string): number[] {
-  // TODO: Implement word search logic
-  console.log('Searching for character:', x, 'in', words.length, 'words');
-  return [];
+  const result: number[] = [];
+  
+  // Check each word for the character
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].indexOf(x) !== -1) { // Character found in word
+      result.push(i);
+    }
+  }
+  
+  return result;
 }
