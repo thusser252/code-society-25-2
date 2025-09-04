@@ -10,6 +10,7 @@ import { JaredEdgeLoader } from './jared_edge_loader.js';
 import { JoneemckellarLoader } from './joneemckellar_loader.js';
 import { LindaQuinoaLoader } from './linda_quinoa_loader.js';
 import { MattieWeathersbyLoader } from './mattie_weathersby_loader.js';
+import { NicoleJacksonLoader } from './nicole_jackson_loader.js';
 
 export const Loaders = Symbol.for('Loaders');
 
@@ -25,6 +26,7 @@ const LOADER_PROVIDERS = [
   KerryFergusonLoader,
   LindaQuinoaLoader,  
   MattieWeathersbyLoader,
+  NicoleJacksonLoader,
 ];
 
 @Module({
