@@ -4,6 +4,7 @@ import { BenjaminScottLoader } from './benjamin_scott_loader.js';
 import { DanielBoyceLoader } from './daniel_boyce_loader.js';
 import { DeanWalstonLoader } from './dean_walston_loader.js';
 import { JaizelcespedesLoader } from './jaizelcespedes_loader.js';
+import { JaredEdgeLoader } from './jared_edge_loader.js';
 
 export const Loaders = Symbol.for('Loaders');
 
@@ -13,6 +14,7 @@ const LOADER_PROVIDERS = [
   DanielBoyceLoader,
   DeanWalstonLoader,
   JaizelcespedesLoader,
+  JaredEdgeLoader,
 ];
 
 @Module({
