@@ -11,6 +11,7 @@ import { JoneemckellarLoader } from './joneemckellar_loader.js';
 import { LindaQuinoaLoader } from './linda_quinoa_loader.js';
 import { MattieWeathersbyLoader } from './mattie_weathersby_loader.js';
 import { NicoleJacksonLoader } from './nicole_jackson_loader.js';
+import { TrinitieJacksonLoader } from './trinitie_jackson_loader.js';
 import { TyranRiceLoader } from './tyranricejr_loader.js';
 
 export const Loaders = Symbol.for('Loaders');
@@ -28,6 +29,7 @@ const LOADER_PROVIDERS = [
   LindaQuinoaLoader,  
   MattieWeathersbyLoader,
   NicoleJacksonLoader,
+  TrinitieJacksonLoader,
   TyranRiceLoader,
 ];
 
