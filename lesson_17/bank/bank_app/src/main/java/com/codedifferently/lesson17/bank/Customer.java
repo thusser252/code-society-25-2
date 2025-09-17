@@ -9,6 +9,7 @@ public class Customer {
 
   private final UUID id;
   private final String name;
+  private final boolean isBusiness;
   private final Set<CheckingAccount> accounts = new HashSet<>();
 
   /**
@@ -16,10 +17,12 @@ public class Customer {
    *
    * @param id The ID of the customer.
    * @param name The name of the customer.
+   * @param isBusiness True if the customer is a business, false otherwise.
    */
-  public Customer(UUID id, String name) {
+  public Customer(UUID id, String name, boolean isBusiness) {
     this.id = id;
     this.name = name;
+    this.isBusiness = isBusiness;
   }
 
   /**
@@ -38,6 +41,10 @@ public class Customer {
    */
   public String getName() {
     return name;
+  }
+
+  public boolean isBusiness() {
+    return isBusiness;
   }
 
   /**
