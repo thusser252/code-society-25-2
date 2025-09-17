@@ -5,8 +5,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import javax.security.auth.login.AccountNotFoundException;
-
 /** Represents a bank ATM. */
 public class BankAtm {
 
