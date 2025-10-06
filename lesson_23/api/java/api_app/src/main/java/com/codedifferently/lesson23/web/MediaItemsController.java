@@ -39,14 +39,14 @@ public class MediaItemsController {
         "message", "Welcome to the Library Management API!",
         "version", "1.0.0",
         "endpoints", Map.of(
-            "GET /items", "Get all media items",
-            "GET /items/{id}", "Get a specific media item",
+            "DELETE /items/{id}", "Delete a media item",
             "POST /items", "Create a new media item",
-            "DELETE /items/{id}", "Delete a media item"
+            "GET /items", "Get all media items",
+            "GET /items/{id}", "Get a specific media item"
         ),
         "documentation", Map.of(
-            "swagger", "/swagger-ui.html",
-            "openapi", "/v3/api-docs"
+            "openapi", "/v3/api-docs",
+            "swagger", "/swagger-ui.html"
         ),
         "statistics", Map.of(
             "totalItems", library.search(SearchCriteria.builder().build()).size(),
