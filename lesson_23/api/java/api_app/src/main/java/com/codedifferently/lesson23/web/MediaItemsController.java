@@ -31,29 +31,6 @@ public class MediaItemsController {
     this.librarian = library.getLibrarians().stream().findFirst().orElseThrow();
   }
 
-  @GetMapping("/")
-  public ResponseEntity<Map<String, Object>> welcome() {
-    Map<String, Object> response =
-        Map.of(
-            "message", "Welcome to the Library Management API!",
-            "version", "1.0.0",
-            "endpoints",
-                Map.of(
-                    "DELETE /items/{id}", "Delete a media item",
-                    "POST /items", "Create a new media item",
-                    "GET /items", "Get all media items",
-                    "GET /items/{id}", "Get a specific media item"),
-            "documentation",
-                Map.of(
-                    "openapi", "/v3/api-docs",
-                    "swagger", "/swagger-ui.html"),
-            "statistics",
-                Map.of(
-                    "totalItems", library.search(SearchCriteria.builder().build()).size(),
-                    "totalLibrarians", library.getLibrarians().size()));
-    return ResponseEntity.ok(response);
-  }
-
   @GetMapping("/items")
   public ResponseEntity<GetMediaItemsResponse> getItems() {
     Set<MediaItem> items = library.search(SearchCriteria.builder().build());
