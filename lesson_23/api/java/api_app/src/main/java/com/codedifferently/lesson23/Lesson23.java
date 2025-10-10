@@ -24,7 +24,7 @@ public class Lesson23 implements CommandLineRunner {
     if (isJUnitTest()) {
       return;
     }
-    
+
     // Check if web-only mode is requested
     for (String arg : args) {
       if ("--web-only".equals(arg)) {

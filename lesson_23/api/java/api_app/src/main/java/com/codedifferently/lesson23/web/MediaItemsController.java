@@ -72,7 +72,8 @@ public class MediaItemsController {
 
   @GetMapping("/swagger-ui.html")
   public ResponseEntity<String> getSwaggerUI() {
-    String swaggerHtml = """
+    String swaggerHtml =
+        """
         <!DOCTYPE html>
         <html>
         <head>
@@ -108,72 +109,84 @@ public class MediaItemsController {
         </body>
         </html>
         """;
-    return ResponseEntity.ok()
-        .header("Content-Type", "text/html")
-        .body(swaggerHtml);
+    return ResponseEntity.ok().header("Content-Type", "text/html").body(swaggerHtml);
   }
 
   @GetMapping("/v3/api-docs")
   public ResponseEntity<Map<String, Object>> getApiDocs() {
-    Map<String, Object> openApiSpec = Map.of(
-        "openapi", "3.0.1",
-        "info", Map.of(
-            "title", "Library Management API",
-            "description", "A simple API for managing library media items",
-            "version", "1.0.0"
-        ),
-        "servers", List.of(
-            Map.of("url", "http://localhost:3001", "description", "Development server")
-        ),
-        "paths", Map.of(
-            "/", Map.of(
-                "get", Map.of(
-                    "summary", "Get welcome message",
-                    "responses", Map.of(
-                        "200", Map.of("description", "Welcome message")
-                    )
-                )
-            ),
-            "/items", Map.of(
-                "get", Map.of(
-                    "summary", "Get all media items",
-                    "responses", Map.of(
-                        "200", Map.of("description", "List of media items")
-                    )
-                ),
-                "post", Map.of(
-                    "summary", "Create a new media item",
-                    "responses", Map.of(
-                        "200", Map.of("description", "Created media item")
-                    )
-                )
-            ),
-            "/items/{id}", Map.of(
-                "get", Map.of(
-                    "summary", "Get media item by ID",
-                    "parameters", List.of(
-                        Map.of("name", "id", "in", "path", "required", true, 
-                               "schema", Map.of("type", "string"))
-                    ),
-                    "responses", Map.of(
-                        "200", Map.of("description", "Media item"),
-                        "404", Map.of("description", "Item not found")
-                    )
-                ),
-                "delete", Map.of(
-                    "summary", "Delete media item by ID",
-                    "parameters", List.of(
-                        Map.of("name", "id", "in", "path", "required", true, 
-                               "schema", Map.of("type", "string"))
-                    ),
-                    "responses", Map.of(
-                        "204", Map.of("description", "Item deleted"),
-                        "404", Map.of("description", "Item not found")
-                    )
-                )
-            )
-        )
-    );
+    Map<String, Object> openApiSpec =
+        Map.of(
+            "openapi", "3.0.1",
+            "info",
+                Map.of(
+                    "title", "Library Management API",
+                    "description", "A simple API for managing library media items",
+                    "version", "1.0.0"),
+            "servers",
+                List.of(
+                    Map.of("url", "http://localhost:3001", "description", "Development server")),
+            "paths",
+                Map.of(
+                    "/",
+                        Map.of(
+                            "get",
+                            Map.of(
+                                "summary",
+                                "Get welcome message",
+                                "responses",
+                                Map.of("200", Map.of("description", "Welcome message")))),
+                    "/items",
+                        Map.of(
+                            "get",
+                                Map.of(
+                                    "summary",
+                                    "Get all media items",
+                                    "responses",
+                                    Map.of("200", Map.of("description", "List of media items"))),
+                            "post",
+                                Map.of(
+                                    "summary",
+                                    "Create a new media item",
+                                    "responses",
+                                    Map.of("200", Map.of("description", "Created media item")))),
+                    "/items/{id}",
+                        Map.of(
+                            "get",
+                                Map.of(
+                                    "summary", "Get media item by ID",
+                                    "parameters",
+                                        List.of(
+                                            Map.of(
+                                                "name",
+                                                "id",
+                                                "in",
+                                                "path",
+                                                "required",
+                                                true,
+                                                "schema",
+                                                Map.of("type", "string"))),
+                                    "responses",
+                                        Map.of(
+                                            "200", Map.of("description", "Media item"),
+                                            "404", Map.of("description", "Item not found"))),
+                            "delete",
+                                Map.of(
+                                    "summary", "Delete media item by ID",
+                                    "parameters",
+                                        List.of(
+                                            Map.of(
+                                                "name",
+                                                "id",
+                                                "in",
+                                                "path",
+                                                "required",
+                                                true,
+                                                "schema",
+                                                Map.of("type", "string"))),
+                                    "responses",
+                                        Map.of(
+                                            "204", Map.of("description", "Item deleted"),
+                                            "404", Map.of("description", "Item not found"))))));
     return ResponseEntity.ok(openApiSpec);
   }
 
@@ -191,6 +204,5 @@ public class MediaItemsController {
       // Invalid UUID format
       return ResponseEntity.badRequest().build();
     }
-  }
   }
 }

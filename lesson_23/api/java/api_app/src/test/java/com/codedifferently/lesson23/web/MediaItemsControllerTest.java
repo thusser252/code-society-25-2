@@ -114,18 +114,14 @@ class MediaItemsControllerTest {
   @Test
   void testController_returnsBadRequestOnGetItemWithInvalidUuid() throws Exception {
     mockMvc
-        .perform(
-            get("/items/invalid-uuid-format")
-                .contentType(MediaType.APPLICATION_JSON))
+        .perform(get("/items/invalid-uuid-format").contentType(MediaType.APPLICATION_JSON))
         .andExpect(status().isBadRequest());
   }
 
   @Test
   void testController_returnsBadRequestOnDeleteItemWithInvalidUuid() throws Exception {
     mockMvc
-        .perform(
-            delete("/items/invalid-uuid-format")
-                .contentType(MediaType.APPLICATION_JSON))
+        .perform(delete("/items/invalid-uuid-format").contentType(MediaType.APPLICATION_JSON))
         .andExpect(status().isBadRequest());
   }
 
