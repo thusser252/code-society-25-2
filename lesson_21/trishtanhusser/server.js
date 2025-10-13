@@ -7,17 +7,17 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Serve static files (CSS, images, etc.)
-app.use(express.static(__dirname));
+// Serve static files (CSS, images, etc.) from the public folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Home route - serve the main page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Contact page route
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'contact.html'));
+    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
 // Handle contact form submission
